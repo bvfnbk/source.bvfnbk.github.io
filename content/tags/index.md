@@ -1,0 +1,10 @@
++++
+title = "Tags"
++++
+
+asdf
+<ul>
+    {{ range .Site.Taxonomies.tags }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+</ul>

@@ -1,0 +1,17 @@
+##
+# IDE Stuff
+#
+.idea/
+*.iml
+
+##
+# OS Stuff
+#
+.DS_Store
+
+##
+# Hugo Stuff
+#
+.hugo_build.lock
+public/
+resources/_gen/
