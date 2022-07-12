@@ -1,8 +1,8 @@
 ---
 title: "Part 4 : Serve Locally"
 date: 2022-07-08T13:40:05+02:00
-draft: true
 includeInPostList: true
+draft: false
 tags:
   - Hugo
   - Github

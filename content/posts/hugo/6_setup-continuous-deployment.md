@@ -2,7 +2,7 @@
 title: "Part 6 : Setup Continuous Deployment"
 date: 2022-07-08T15:43:05+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
   - Hugo
   - Github

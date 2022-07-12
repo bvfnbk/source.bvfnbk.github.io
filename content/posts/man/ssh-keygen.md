@@ -2,7 +2,7 @@
 title: "ssh-keygen"
 date: 2022-07-12T16:32:11+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
   - man
   - linux

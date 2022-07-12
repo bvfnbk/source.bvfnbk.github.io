@@ -2,7 +2,7 @@
 title: "pbcopy"
 date: 2022-07-12T17:14:20+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
   - man
   - macOS

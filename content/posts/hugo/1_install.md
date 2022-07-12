@@ -2,7 +2,7 @@
 title: "Part 1 : Installing Hugo"
 date: 2022-07-08T10:36:30+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
 - Hugo
 - Github

@@ -2,7 +2,7 @@
 title: "Part 5 : Setup Github"
 date: 2022-07-08T15:11:05+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
   - Hugo
   - Github

@@ -2,7 +2,7 @@
 title: "Part 2 : Initialising a Site"
 date: 2022-07-08T12:31:11+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
   - Hugo
   - Github

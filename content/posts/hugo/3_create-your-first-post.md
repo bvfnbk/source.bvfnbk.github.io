@@ -2,7 +2,7 @@
 title: "Part 3 : Create your First Post"
 date: 2022-07-08T13:11:25+02:00
 includeInPostList: true
-draft: true
+draft: false
 tags:
   - Hugo
   - Github
