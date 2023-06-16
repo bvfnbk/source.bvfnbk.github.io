@@ -24,7 +24,7 @@ libraries.
 
 ## Scenario
 
-The prove-of-concept application consists out of a web page and a service. The service is supposed to serve the assets
+The proof-of-concept application consists out of a web page and a service. The service is supposed to serve the assets
 and a simple REST end-point.
 
 The UI provides an input element asking for a name which will be sent to the backend to compose a message which will be
