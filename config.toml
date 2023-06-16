@@ -1,0 +1,36 @@
+baseURL = 'https://bvfnbk.github.io/'
+languageCode = 'en-us'
+title = 'Notes of bvfnbk'
+
+enableEmoji = true
+
+theme = "bvfnbk"
+
+[params]
+  author = "bvfnbk"
+  description = "Software development and other stuff."
+  menu_item_separator = " / "
+  avatar = "avatar.png"
+
+  [[params.social]]
+    icon = "github"
+    name = "https://github.com/bvfnbk"
+    url = "https://github.com/bvfnbk"
+
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3

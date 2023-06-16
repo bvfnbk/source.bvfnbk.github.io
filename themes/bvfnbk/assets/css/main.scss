@@ -1,0 +1,16 @@
+$primary_background: rgb(252, 252, 252);
+$primary_foreground: rgb(30, 31, 34);
+$primary_accent: rgb(66, 133, 255);
+$primary_accent_highlight: darken($primary_accent, 50%);
+
+// E.g. side navigation:
+$secondary_foreground: rgb(252, 252, 252);
+$secondary_background: rgb(30, 31, 34);
+$secondary_accent: rgb(66, 133, 255);
+$secondary_accent_highlight: lighten($secondary_accent, 50%);
+
+$code: rgba(190, 0, 0, .8);
+
+
+@import "page";
+@import "post";

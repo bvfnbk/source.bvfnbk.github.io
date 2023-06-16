@@ -1,0 +1,164 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.6;
+}
+
+body {
+    background-color: $primary_background;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+div.highlight {
+    pre {
+        padding: 1rem;
+    }
+}
+
+div.highlight {
+    * {
+        font-family: monospace;
+    }
+    pre {
+        code {
+            span {
+                span {
+                    color: $secondary_foreground;
+                }
+            }
+        }
+    }
+}
+
+pre, code {
+    font-family: monospace;
+}
+
+pre {
+    font-size: 1rem;
+    line-height: 1.2em;
+    margin: 0;
+    overflow: auto;
+
+    code {
+        font-size: 1em;
+    }
+}
+
+code {
+    font-size: 0.8em;
+    color: $code;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+    font-weight: bold;
+}
+
+
+.side-navigation {
+    color: $secondary_foreground;
+    background: $secondary_background;
+
+    padding: 2.5em;
+    text-align: center;
+
+    a {
+        color: $secondary_accent;
+        transition: color 0.35s;
+        text-decoration: none;
+
+        &:hover {
+            color: $secondary_accent_highlight;
+        }
+
+        img.avatar {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 100%;
+            border: 0.5rem solid $secondary_accent;
+        }
+    }
+
+
+    .menu {
+        .item {
+            // Style originally not defined.
+        }
+    }
+
+    .social {
+        font-size: 2em;
+        color: $secondary_foreground;
+    }
+}
+
+.main {
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+
+@media (min-width: 940px) {
+    .side-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        min-height: 100vh;
+    }
+
+    .main {
+        max-width: 65rem;
+        margin-left: 20rem;
+    }
+}
+
+
+.pagination {
+    display: block;
+    list-style: none;
+    padding: 0;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 3em 0;
+}
+
+.page-item {
+    display: inline-block;
+
+    .page-link {
+        display: block;
+        padding: 0.285em 0.8em;
+    }
+
+    &.active {
+        .page-link {
+            color: $secondary_foreground;
+            border-radius: 2em;
+            background: $secondary_accent;
+        }
+    }
+}
+
+a {
+    color: $primary_accent;
+    transition: color 0.35s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $primary_accent_highlight;
+}
+

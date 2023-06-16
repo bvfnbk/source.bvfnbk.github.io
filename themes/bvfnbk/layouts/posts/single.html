@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="post">
+  <header class="header">
+    <h1 class ="title">{{ .Title }}</h1>
+    {{- if ne .Type "page" }}
+    <div class="meta">
+      <div>
+        {{ (printf "/static/icons/calendar.svg" | readFile) | safeHTML }}
+        {{ .PublishDate.Format "Jan 2, 2006" }}
+      </div>
+      <div>
+        {{ (printf "/static/icons/clock.svg" | readFile) | safeHTML }}
+        {{ .ReadingTime }} min read
+      </div>
+      {{- with .Params.tags }}
+      <div>
+        {{ (printf "/static/icons/tag.svg" | readFile) | safeHTML }}
+        {{- range . -}}
+        {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{- end }}
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+    {{- end }}
+  </header>
+  <div class="content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

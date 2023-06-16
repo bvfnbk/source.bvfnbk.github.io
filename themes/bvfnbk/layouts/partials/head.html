@@ -1,0 +1,12 @@
+<head>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon | default "/favicon.ico" }}" />
+  <meta charset="utf-8" />
+  {{ hugo.Generator }}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="{{ .Site.Params.author | default "John Doe" }}" />
+  <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+
+  {{ $mainStyle := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
+  <link rel="stylesheet" href="{{ $mainStyle.Permalink }}" />
+</head>
