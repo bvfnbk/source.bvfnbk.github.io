@@ -20,8 +20,12 @@
         .highlight > pre,
         .highlight > div {
             border-left: 0.4em solid rgba($primary_accent, .8);
-            //padding: .5em 1em;
             background: rgba($secondary_background, 0.8);
+            code {
+                span {
+                    margin-bottom: 0.25em;
+                }
+            }
         }
 
         img {

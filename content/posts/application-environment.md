@@ -38,7 +38,7 @@ _Bundle ID_. This bundle ID consists out of the
 
 which is concatenated to
 
-```
+```shell
 com.github.bvfnbk.ApplicationName
 ```
 
@@ -84,13 +84,13 @@ on where to put this kind of directory.
 _Windows_ defines the `AppData` directory for each user to contain the user application data. This directory can be
 found at
 
-```commandline
+```shell
 C:\Users\${username}\AppData\
 ```
 
 By default, there are the following directories to be found here:
 
-```commandline
+```shell
 C:\Users\${username}\AppData\Local
 C:\Users\${username}\AppData\LocalLow
 C:\Users\${username}\AppData\Roaming
