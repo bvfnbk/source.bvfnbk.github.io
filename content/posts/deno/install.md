@@ -2,7 +2,7 @@
 title: "Installing Deno"
 date: 2023-06-16T17:12:35+02:00
 includeInPostList: true
-draft: true
+draft: false
 ---
 
 _Deno_ is easily installed. Simply visit https://github.com/denoland/deno/releases and download the ZIP file matching
