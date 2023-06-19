@@ -27,13 +27,18 @@ deno-$VERSION/bin/deno
 ```shell
 xattr -d com.apple.quarantine deno-$VERSION/bin/deno
 ```
+to remove the quarantine flag.
 
-to remove the quarantine flag. The following environment variables could be set.
+The following environment variables may be useful:
 
-| Environment Variable | Comment                              |
-|----------------------|--------------------------------------|
-| `DENO_DIR`           | Cache directory.                     |
-| `DENO_REPL_HISTORY`  | The directory for the REPL history.  |
-| `DENO_INSTALL_DIR`   | The `deno_install` output directory. |
+| Environment Variable   | Comment                                                 | Default                                                             |
+|------------------------|---------------------------------------------------------|---------------------------------------------------------------------|
+| `DENO_DIR`             | Cache (transpiled files, remote modules etc.)           | `deno/` to be found in the default Operating System Cache directory |
+| `DENO_INSTALL_ROOT`    | Location to store scripts installed with `deno install` | `$HOME/.deno/bin`                                                   |
+| `DENO_NO_UPDATE_CHECK` | Disable check for newer `deno` version (if set)         | Not set                                                             |
 
-**Please note:** Not sure, which ones are actually required.
+**Please note:** Set `DENO_DIR` and `DENO_INSTALL_ROOT` for project-specific caches and scripts.
+
+## Resources
+
+https://deno.com/manual@v1.34.3/getting_started/setup_your_environment
