@@ -37,7 +37,13 @@ The following environment variables may be useful:
 | `DENO_INSTALL_ROOT`    | Location to store scripts installed with `deno install` | `$HOME/.deno/bin`                                                   |
 | `DENO_NO_UPDATE_CHECK` | Disable check for newer `deno` version (if set)         | Not set                                                             |
 
-**Please note:** Set `DENO_DIR` and `DENO_INSTALL_ROOT` for project-specific caches and scripts.
+**Please note:** 
+
+- Set `DENO_DIR` and `DENO_INSTALL_ROOT` for project-specific caches and scripts, e.g. using a `.envrc` file (managed by
+  `direnv`).
+- IntelliJ
+  - Plugin: "Better Direnv": The plugin does not (yet) support _Deno_ run configurations.
+
 
 ## Resources
 
