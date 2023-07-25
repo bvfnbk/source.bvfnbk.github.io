@@ -72,6 +72,12 @@ This can be easily fixed: update `tsconfig.json` and add the property `rootDir` 
 
 Rebuild `dist/` and open `dist/index.html`.
 
+> **Please note:** Building the bundle fails with this setting recently. _Why_ is not 100% clear - eventually 
+> _TypeScript_ has been updated or the `ts-loader`. However, this setting was only a quick fix on the way to the actual
+> bundle.
+> 
+> This is not required once the bundle has been created. So, skip it and jump to the bundle creation.
+
 ### Step 2: Create Entry Point
 
 The initialization code is currently distributed across several files:
